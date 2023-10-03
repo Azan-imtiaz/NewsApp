@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>   
+         <div class="main-nav con flex">
+  <a href="#" class="logo"  >
+  <img src="/News.jpg" alt="logo here" onclick="reload()">
+  </a>
+  
+
+    <div class="nav-link">
+        <ul class="flex">
+            <li class="hover-link nav-item" id="sport" contenteditable="true" onclick="onNavItemClick('sport')">
+                Sports</li>
+            <li class="hover-link nav-item" id="health" contenteditable="true" onclick="onNavItemClick('health')">
+                Health</li>
+            <li class="hover-link nav-item" contenteditable="true" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+            <li class="hover-link nav-item" contenteditable="true" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+            <li class="hover-link nav-item" contenteditable="true" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+        </ul>
+    </div>
+   
+    <div class="search-bar flex">
+        <input type="text" class="nav-search  no-border" id="search-text"   placeholder="e.g Science">
+     <button class="search-button"   value="" ID="search-button">Search</button>
+    </div>
+</div>
+
+</nav>
+
+<main>
+
+<div class="cards-container con flex" id="cont">
+        </div>
+        <template id="template-news-card" >
+        <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" class="news-image" id="news-image">
+           </div>
+            <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+           <h6 id="news-source" class="news-source">End Gadget 26/08/2023</h6>
+           <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quae sint alias quibusdam eligendi vitae unde maxime placeat nihil magni?</p>
+                
+        </div>
+         
+        </div>
+          
+        </template>
+
+        
+
+</main>
+
+<footer id="foot" hidden >
+    <p>AK-NEWS@azanimtiaz43</p>
+</footer>
+    <script src="/script.js"></script>
+</body>
+</html>
