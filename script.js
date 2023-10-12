@@ -1,6 +1,6 @@
 const API_KEY="1756bd1a6bce4492b2312060a7eb8f80";
 // const API_KEY = process.env.API_KEY; // Access the environment variable
-const url="http://newsapi.org/v2/everything?q=";
+const url="https://newsapi.org/v2/everything?q=";
 
 
 
