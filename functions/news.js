@@ -10,6 +10,7 @@ const API_KEY="1756bd1a6bce4492b2312060a7eb8f80";
     // https://newsapi.org/v2/everything?q=tesla&from=2023-09-17&sortBy=publishedAt&apiKey=1756bd1a6bce4492b2312060a7eb8f80
     const response = await fetch(apiUrl,{method:"GET"});
     const data = await response.json();
+    console.log(data);
 
     return {
       statusCode: 200,
