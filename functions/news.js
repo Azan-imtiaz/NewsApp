@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 exports.handler = async (event, context) => {
   try {
-    const API_KEY = 'YOUR_API_KEY'; // Replace with your News API key
+const API_KEY="1756bd1a6bce4492b2312060a7eb8f80";
     const query = event.queryStringParameters.q;
 
     const apiUrl = `https://newsapi.org/v2/everything?q=${query}&apiKey=${API_KEY}`;
