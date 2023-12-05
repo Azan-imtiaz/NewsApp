@@ -1,5 +1,5 @@
+// const API_KEY = process.env.API_KEY;          Access the environment variable
 const API_KEY="1756bd1a6bce4492b2312060a7eb8f80";
-// const API_KEY = process.env.API_KEY; // Access the environment variable
 const url="https://newsapi.org/v2/everything?q=";
 
 
@@ -21,8 +21,8 @@ fetchNews("pakistan")
 );
 
 async function fetchNews(query){
-    // const res =await fetch(`${url}${query}&apiKey=${API_KEY}`);
-    const res = await fetch(`/.netlify/functions/news?q=${query}`);
+    const res =await fetch(`${url}${query}&apiKey=${API_KEY}`);
+    // const res = await fetch(`/.netlify/functions/news?q=${query}`);
 
     const  data=await res.json();
     console.log(data.articles);
